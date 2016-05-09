@@ -1,0 +1,11 @@
+{
+	"sound1": {
+		"category": "",
+		"sounds": [
+			{
+				"name": "sound1",
+				"stream": true
+			}
+		]
+	}
+}
