@@ -3,7 +3,7 @@
 		"category": "",
 		"sounds": [
 			{
-				"name": "sound1",
+				"name": "threedprojectiles:sound1",
 				"stream": true
 			}
 		]
