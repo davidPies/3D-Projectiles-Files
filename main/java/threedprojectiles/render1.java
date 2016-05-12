@@ -14,7 +14,7 @@ public class render1 extends Render
 {
 
 // ResourceLocations are typically static and final, but that is not an absolute requirement
-private static final ResourceLocation texture = new ResourceLocation("threedprojectiles", "textures/entity/entity2snow.png");
+private static final ResourceLocation texture = new ResourceLocation("threedprojectiles:textures/entity/entity2snow.png");
 
 // if you want a model, be sure to add it here:
 private ModelBase model;
