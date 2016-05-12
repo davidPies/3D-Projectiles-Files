@@ -30,12 +30,12 @@ public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World wor
         --itemStackIn.stackSize;
     }
 
-    worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.entity_snowball_throw, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
+    worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, soundevents.q, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 
     if (!worldIn.isRemote)
     {
-        EntitySnowball entitysnowball = new EntitySnowball(worldIn, playerIn);
-        entitysnowball.func_184538_a(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
+        entity1 entitysnowball = new entity1(worldIn, playerIn);
+        entitysnowball.func_184547_a(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
         worldIn.spawnEntityInWorld(entitysnowball);
     }
 

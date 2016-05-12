@@ -1,5 +1,7 @@
 package threedprojectiles;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,6 +16,7 @@ import net.minecraft.stats.StatList;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -23,7 +26,8 @@ public class item2 extends ItemBow {
 		public item2() {
         	 super();
         	 boolean canBePickedUp = false;
-                setMaxStackSize(1);
+        	 GameRegistry.registerItem(this, "item2");
+        	 	setMaxStackSize(1);
                 setCreativeTab(CreativeTabs.tabCombat);
                 setUnlocalizedName("item2");
                 setMaxDamage(250);
@@ -126,7 +130,7 @@ public class item2 extends ItemBow {
 		                        worldIn.spawnEntityInWorld(entityarrow);
 		                    }
 
-		                    worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.entity_arrow_shoot, SoundCategory.NEUTRAL, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+		                    worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, soundevents.q, SoundCategory.NEUTRAL, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
 
 		                    if (!flag1)
 		                    {
